@@ -20,6 +20,8 @@
              extend: {
                colors: {
                  clifford: '#da373d',
+                 'c-primary': '#F85559',
+                 's-primary': 'rgba(18, 18, 18, 0.40)',
                }
              }
            }
@@ -34,33 +36,41 @@
 <body class="font-lato">
   <header class="md:container md:mx-auto">
     <!-- navbar section -->
-    <nav>
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-            </label>
-            
+      <nav class="mb:bg-c-primary lg:bg-c-primary rounded-full m-12 h-28">
+        <div class="navbar mb:bg-c-primary lg:bg-c-primary rounded-full m-12 h-28">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+              
+            </div>
+            <div class="navbar-start hidden lg:flex">
+              <ul class="text-base py-8  flex font-normal text-white space-x-4 menu-horizontal">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="navbar-start hidden lg:flex">
-            <ul class="menu text-lg menu-horizontal px-1">
-              <li><a>Home</a></li>
-              <li><a>About Us</a></li>
-              <li><a>Shop</a></li>
-              <li><a>All Fruits</a></li>
-            </ul>
+          <div class="navbar-center">
+            <img class="h-14 w-14" src="./images/logo.png" alt="">
+            <a class="btn btn-ghost normal-case text-white font-bold text-4xl">Fruit Burst</a>
+          </div>
+         
+          <div class="navbar-end">
+           <div class="flex relative">
+           <div class="asolute justify-start pl-4">
+            <a class="btn h-14 w-0 lg:w-80 normal-case s-primary text-base font-normal rounded-full">Search here</a>
+           </div>
+            <div class="absolute py-4 px-72">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+           </div>
           </div>
         </div>
-        <div class="navbar-center">
-          <a class="btn btn-ghost normal-case text-4xl">Fruit Burst</a>
-        </div>
-       
-        <div class="navbar-end">
-          <a class="btn">Button</a>
-        </div>
-      </div>
-    </nav>
+      </nav>
   
   </header>
 
